@@ -6,7 +6,12 @@ import Image from "next/image";
 const Featured = () => {
   const [index, setIndex] = useState(0);
   const [pressed, setPressed] = useState(false);
-  const images = ["/img/f2.jpeg", "/img/f4.jpeg", "/img/f2566.jpeg"];
+  const images = [
+    "/img/f2.jpeg",
+    "/img/f4.jpeg",
+    "/img/f2566.jpeg",
+    "/img/f2_50.jpeg",
+  ];
   let moved = false;
 
   const handleArrow = (dir: "prev" | "next") => {
@@ -56,6 +61,7 @@ const Featured = () => {
           style={{
             transform: `translateX(${-100 * index}vw)`,
             cursor: pressed ? "grabbing" : "auto",
+            width: `${100 * images.length}vw`,
           }}
           onMouseDown={(e) => handleSlide(e, "down")}
           onMouseUp={(e) => handleSlide(e, "up")}
