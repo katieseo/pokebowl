@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans:wght@400;700&display=swap");
-
+@import "./base/fonts";
 @import "./base/config";
 @import "./base/variables";
 @import "./base/reset";
@@ -9,7 +8,7 @@ html {
 }
 
 body {
-  font-family: var(--font-base);
+  font-family: "Quattrocento Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -19,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-title);
+  font-family: "Quattrocento Sans", sans-serif;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
