@@ -1,0 +1,23 @@
+.container {
+  padding: 100px 50px 50px;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: var(--content-maxwidth);
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & > * {
+    width: 100%;
+
+    @media (min-width: 48rem) {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.container {
+  min-height: calc(100vh - 319px);
+  padding: 120px 50px 50px;
+}
+
+.content {
+  @media (min-width: 64rem) {
+    display: flex;
+  }
+}
+
+.summary {
+  flex: 2;
+
+  .item {
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    padding: 30px;
+
+    .itemInfo {
+      margin-left: 50px;
+      margin-right: auto;
+    }
+
+    .itemPrice {
+      font-size: 1.3rem;
+    }
+
+    .itemDelete {
+      font-size: 1.3rem;
+      text-align: center;
+      width: 100px;
+    }
+  }
+}
+
+.checkout {
+  flex: 1;
+  margin-top: 2rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+
+  @media (min-width: 64rem) {
+    margin-top: 0;
+  }
+
+  .wrapper {
+    padding: 50px;
+  }
+
+  .priceInfo {
+    margin-top: 2rem;
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .total {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  button {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: 30px auto;
+    width: 200px;
+
+    @media (min-width: 64rem) {
+      width: 100%;
+    }
+  }
+}

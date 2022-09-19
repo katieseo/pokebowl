@@ -1,0 +1,51 @@
+.container {
+  height: 50vh;
+  margin-top: 80px;
+}
+
+.content {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  width: 300vw;
+}
+
+.featureImg {
+  height: 100%;
+  position: relative;
+  width: 100vw;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  line-height: 0;
+  position: absolute;
+  top: calc(50%);
+  z-index: 3;
+
+  svg {
+    color: var(--color-primary);
+    width: 2rem;
+  }
+}
+
+.arrowLeft {
+  @extend .arrow;
+  left: 2%;
+}
+
+.arrowRight {
+  @extend .arrow;
+  right: 2%;
+}
