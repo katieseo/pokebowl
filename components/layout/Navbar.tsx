@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "../../styles/Navbar.module.scss";
-import { IconPhone, IconCart } from "../../icons/icons";
+import { AiOutlinePhone } from "react-icons/ai";
 
 const Navbar = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -46,6 +46,7 @@ const Navbar = () => {
         </div>
         <div className={styles.call}>
           <a href="tel:2508128900">
+            <AiOutlinePhone />
             <span>Call to Order</span>
           </a>
         </div>
